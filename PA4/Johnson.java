@@ -25,7 +25,7 @@ public class Johnson extends Graph {
 		for(int i = 0; i < numVertices; i++) {
 			for(int j = 0; j < adjList.get(i).size(); j++) {
 				Edge e = adjList.get(i).get(j);
-				e.weight += phi[e.src] - phi[e.dest];
+				e.weight = e.weight +  phi[e.src] - phi[e.dest];
 			}
 		}
 		int[][] allPairMatrix = new int[numVertices][];
@@ -43,7 +43,7 @@ public class Johnson extends Graph {
 		for(int i = 0; i < numVertices; i++) {
 			for(int j = 0; j < adjList.get(i).size(); j++) {
 				Edge e = adjList.get(i).get(j);
-				e.weight -= phi[e.src] + phi[e.dest];
+				e.weight = e.weight - phi[e.src] + phi[e.dest];
 			}
 		}
 		return allPairMatrix;
