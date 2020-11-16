@@ -22,6 +22,7 @@ public class TestCorrectness {
 					DynamicProgramming.numberOfBinaryStringsWithNoConsecutiveOnes(i));
 
 		System.out.println();
+		/*
 		int[] seq0 = { 10, 22, 9, 33, 21, 50, 41, 60, 55, 57 };
 		int[] seq1 = { 10, 22, 9, 33, 21, 50, 41, 60, 7 };
 		int[] seq2 = { -1, 2, 0, 4, 8, 5, 7, 10, 3 };
@@ -30,6 +31,7 @@ public class TestCorrectness {
 		for (int i = 0; i < sequences.length; i++)
 			System.out.printf("A Longest Increasing Subsequence of %s is %s%n", Arrays.toString(sequences[i]),
 					DynamicProgramming.longestIncreasingSubsequence(sequences[i], sequences[i].length));
+		 */
 	}
 
 	private static void testBellmanFord() throws FileNotFoundException {
