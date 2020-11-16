@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class TestTime {
 
-	static final String DIJKSTRA_FOLDER = ".";
+	static final String DIJKSTRA_FOLDER = "/Users/zachharvey/Documents/Development/workspace/CS433PA4/PA4/RoadNetworks/";
 
 	static void testDijkstraTime() throws Exception {
 		System.out.println("*** Time Test Dijkstra ***\n");
