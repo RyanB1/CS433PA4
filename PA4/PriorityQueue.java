@@ -11,8 +11,8 @@ public class PriorityQueue<T> {
 	private Hashtable<T, Integer> itemToHeapIndex;
 
 	public PriorityQueue() {
-		contents = new ArrayList<PriorityQueueElement<T>>();
-		itemToHeapIndex = new Hashtable<T, Integer>();
+		contents = new ArrayList<>();
+		itemToHeapIndex = new Hashtable<>();
 	}
 
 	public T getMinimumItem() {
