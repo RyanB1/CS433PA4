@@ -12,7 +12,7 @@ public class Dijkstra extends Graph {
 		Arrays.fill(distance, Integer.MAX_VALUE);
 		Arrays.fill(closed, false);
 
-		PriorityQueue<Integer> open = new PriorityQueue<Integer>();
+		PriorityQueue<Integer> open = new PriorityQueue<>();
 		open.setPriority(source, 0);
 
 		distance[source] = 0;
